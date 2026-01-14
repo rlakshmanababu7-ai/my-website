@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FoodHub — Order Delicious Food Online</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">
+          <i class="fas fa-utensils text-danger"></i> FoodHub
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+          aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="offers.html">Special Offers</a></li>
+            <li class="nav-item"><a class="nav-link" href="manage-dishes.html">Admin</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item ms-2"><a class="btn btn-danger btn-sm" href="cart.html"><i
+                  class="fas fa-shopping-cart"></i> Cart</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero-section bg-light py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h1 class="display-4 fw-bold mb-3">Craving Something Delicious?</h1>
+            <p class="lead text-muted mb-4">Order your favorite foods from the best restaurants. Fresh, hot, and
+              delivered to your door.</p>
+            <div class="search-box mb-3">
+              <input type="text" class="form-control form-control-lg" placeholder="Search foods, restaurants...">
+            </div>
+            <div class="d-flex gap-2">
+              <a href="menu.html" class="btn btn-danger btn-lg">Order Now</a>
+              <a href="offers.html" class="btn btn-outline-danger btn-lg">View Offers</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-image text-center">
+              <img src="https://via.placeholder.com/400x350/FF6B6B/FFFFFF?text=Delicious+Food" alt="Food"
+                class="img-fluid rounded-3">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section py-4 bg-white">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-4">
+            <h3 class="text-danger">500+</h3>
+            <p class="text-muted">Restaurants</p>
+          </div>
+          <div class="col-md-4">
+            <h3 class="text-danger">10K+</h3>
+            <p class="text-muted">Dishes Available</p>
+          </div>
+          <div class="col-md-4">
+            <h3 class="text-danger">1M+</h3>
+            <p class="text-muted">Happy Customers</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section py-5 bg-light">
+      <div class="container">
+        <h2 class="mb-4">Browse Categories</h2>
+        <div class="row g-3" id="categoriesContainer">
+          <!-- Categories will be loaded dynamically -->
+          <div class="col-12 text-center py-5">
+            <div class="spinner-border text-danger" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <p class="mt-3 text-muted">Loading categories...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Foods -->
+    <section class="featured-foods py-5">
+      <div class="container">
+        <h2 class="mb-4">Featured Foods</h2>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="food-card">
+              <div class="food-image">
+                <img src="https://via.placeholder.com/250/FFA07A/FFFFFF?text=Burger" alt="Deluxe Burger">
+                <span class="badge-new">New</span>
+              </div>
+              <div class="food-info p-3">
+                <h5>Deluxe Burger</h5>
+                <p class="text-muted small">Premium beef with cheese & fresh veggies</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="price fw-bold text-danger">$8.99</span>
+                  <button class="btn btn-sm btn-outline-danger"><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="food-card">
+              <div class="food-image">
+                <img src="https://via.placeholder.com/250/FFD700/FFFFFF?text=Pizza" alt="Cheese Pizza">
+                <span class="badge-discount">-20%</span>
+              </div>
+              <div class="food-info p-3">
+                <h5>Cheese Pizza</h5>
+                <p class="text-muted small">Fresh mozzarella with oregano</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="price fw-bold text-danger">$10.99</span>
+                  <button class="btn btn-sm btn-outline-danger"><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="food-card">
+              <div class="food-image">
+                <img src="https://via.placeholder.com/250/90EE90/FFFFFF?text=Salad" alt="Garden Salad">
+              </div>
+              <div class="food-info p-3">
+                <h5>Garden Salad</h5>
+                <p class="text-muted small">Fresh vegetables with vinaigrette</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="price fw-bold text-danger">$5.99</span>
+                  <button class="btn btn-sm btn-outline-danger"><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="food-card">
+              <div class="food-image">
+                <img src="https://via.placeholder.com/250/FFB6C1/FFFFFF?text=Pasta" alt="Carbonara Pasta">
+              </div>
+              <div class="food-info p-3">
+                <h5>Carbonara Pasta</h5>
+                <p class="text-muted small">Creamy pasta with bacon & parmesan</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="price fw-bold text-danger">$9.99</span>
+                  <button class="btn btn-sm btn-outline-danger"><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories py-5 bg-light">
+      <div class="container">
+        <h2 class="mb-4">Order by Category</h2>
+        <div class="row g-3">
+          <div class="col-md-3">
+            <a href="menu.html" class="category-card text-decoration-none">
+              <i class="fas fa-burger"></i>
+              <h6>Fast Food</h6>
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="menu.html" class="category-card text-decoration-none">
+              <i class="fas fa-pizza-slice"></i>
+              <h6>Pizza & Pasta</h6>
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="menu.html" class="category-card text-decoration-none">
+              <i class="fas fa-leaf"></i>
+              <h6>Vegetarian</h6>
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="menu.html" class="category-card text-decoration-none">
+              <i class="fas fa-cupcake"></i>
+              <h6>Desserts</h6>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us py-5">
+      <div class="container">
+        <h2 class="mb-5">Why Choose FoodHub?</h2>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="feature-box text-center">
+              <div class="feature-icon mb-3">
+                <i class="fas fa-shipping-fast"></i>
+              </div>
+              <h5>Fast Delivery</h5>
+              <p class="text-muted">30 minutes or less guaranteed</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="feature-box text-center">
+              <div class="feature-icon mb-3">
+                <i class="fas fa-star"></i>
+              </div>
+              <h5>Quality Food</h5>
+              <p class="text-muted">Verified restaurants & fresh items</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="feature-box text-center">
+              <div class="feature-icon mb-3">
+                <i class="fas fa-lock"></i>
+              </div>
+              <h5>Secure Payment</h5>
+              <p class="text-muted">100% safe & encrypted transactions</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="feature-box text-center">
+              <div class="feature-icon mb-3">
+                <i class="fas fa-headset"></i>
+              </div>
+              <h5>24/7 Support</h5>
+              <p class="text-muted">Always here to help you</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer bg-dark text-white mt-5 py-4">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-md-3">
+          <h6 class="fw-bold mb-3"><i class="fas fa-utensils text-danger"></i> FoodHub</h6>
+          <p class="small text-muted">Your favorite food, delivered fast & fresh.</p>
+        </div>
+        <div class="col-md-3">
+          <h6 class="fw-bold mb-3">Quick Links</h6>
+          <ul class="list-unstyled small">
+            <li><a href="menu.html" class="text-muted text-decoration-none">Menu</a></li>
+            <li><a href="offers.html" class="text-muted text-decoration-none">Offers</a></li>
+            <li><a href="contact.html" class="text-muted text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h6 class="fw-bold mb-3">Legal</h6>
+          <ul class="list-unstyled small">
+            <li><a href="#" class="text-muted text-decoration-none">Privacy Policy</a></li>
+            <li><a href="#" class="text-muted text-decoration-none">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h6 class="fw-bold mb-3">Follow Us</h6>
+          <div class="d-flex gap-2">
+            <a href="#" class="text-danger"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-danger"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-danger"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="bg-secondary">
+      <p class="text-center text-muted small mb-0">© 2026 FoodHub. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

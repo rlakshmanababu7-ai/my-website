@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — FoodHub</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">
+          <i class="fas fa-utensils text-danger"></i> FoodHub
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="offers.html">Special Offers</a></li>
+            <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+            <li class="nav-item ms-2"><a class="btn btn-danger btn-sm" href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="py-5">
+    <div class="container">
+      <h1 class="mb-5">Contact Us</h1>
+
+      <div class="row g-5">
+        <div class="col-lg-6">
+          <h3 class="mb-4">Get in Touch</h3>
+          <p class="lead">Have questions or feedback? We'd love to hear from you. Contact us through any of the channels below.</p>
+
+          <div class="contact-item mb-4">
+            <h6 class="text-danger mb-2"><i class="fas fa-phone"></i> Phone</h6>
+            <p><a href="tel:+1234567890" class="text-decoration-none">+1 (234) 567-890</a></p>
+            <p class="small text-muted">Available 24/7</p>
+          </div>
+
+          <div class="contact-item mb-4">
+            <h6 class="text-danger mb-2"><i class="fas fa-envelope"></i> Email</h6>
+            <p><a href="mailto:support@foodhub.com" class="text-decoration-none">support@foodhub.com</a></p>
+            <p class="small text-muted">We respond within 2 hours</p>
+          </div>
+
+          <div class="contact-item mb-4">
+            <h6 class="text-danger mb-2"><i class="fas fa-map-marker-alt"></i> Address</h6>
+            <p>FoodHub Headquarters<br>
+               123 Food Street<br>
+               Downtown, City 12345</p>
+          </div>
+
+          <div class="contact-item mb-4">
+            <h6 class="text-danger mb-2"><i class="fas fa-clock"></i> Business Hours</h6>
+            <p>Monday - Friday: 9:00 AM - 6:00 PM<br>
+               Saturday: 10:00 AM - 4:00 PM<br>
+               Sunday: Closed</p>
+          </div>
+
+          <div class="contact-item">
+            <h6 class="text-danger mb-3"><i class="fas fa-share-alt"></i> Follow Us</h6>
+            <div class="d-flex gap-3">
+              <a href="#" class="btn btn-sm btn-danger"><i class="fab fa-facebook"></i> Facebook</a>
+              <a href="#" class="btn btn-sm btn-danger"><i class="fab fa-instagram"></i> Instagram</a>
+              <a href="#" class="btn btn-sm btn-danger"><i class="fab fa-twitter"></i> Twitter</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <form class="contact-form">
+            <h3 class="mb-4">Send us a Message</h3>
+
+            <div class="mb-3">
+              <label class="form-label">Full Name</label>
+              <input type="text" class="form-control" placeholder="Your name" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Email Address</label>
+              <input type="email" class="form-control" placeholder="your@email.com" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Phone Number</label>
+              <input type="tel" class="form-control" placeholder="(123) 456-7890">
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Subject</label>
+              <select class="form-select" required>
+                <option value="">Select a subject...</option>
+                <option value="order">Order Issue</option>
+                <option value="delivery">Delivery Problem</option>
+                <option value="restaurant">Restaurant Partnership</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Message</label>
+              <textarea class="form-control" rows="5" placeholder="Tell us how we can help..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-danger btn-lg w-100">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer bg-dark text-white mt-5 py-4">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-md-3">
+          <h6 class="fw-bold mb-3"><i class="fas fa-utensils text-danger"></i> FoodHub</h6>
+          <p class="small text-muted">Your favorite food, delivered fast & fresh.</p>
+        </div>
+        <div class="col-md-3">
+          <h6 class="fw-bold mb-3">Quick Links</h6>
+          <ul class="list-unstyled small">
+            <li><a href="menu.html" class="text-muted text-decoration-none">Menu</a></li>
+            <li><a href="offers.html" class="text-muted text-decoration-none">Offers</a></li>
+            <li><a href="contact.html" class="text-muted text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h6 class="fw-bold mb-3">Legal</h6>
+          <ul class="list-unstyled small">
+            <li><a href="#" class="text-muted text-decoration-none">Privacy Policy</a></li>
+            <li><a href="#" class="text-muted text-decoration-none">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h6 class="fw-bold mb-3">Follow Us</h6>
+          <div class="d-flex gap-2">
+            <a href="#" class="text-danger"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-danger"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-danger"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="bg-secondary">
+      <p class="text-center text-muted small mb-0">© 2026 FoodHub. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
