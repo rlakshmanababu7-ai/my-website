@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 FoodHub — Modern Food Ordering Website
 
 A professional, responsive food delivery/restaurant website built with Bootstrap 5, HTML, CSS, and JavaScript.
@@ -44,3 +45,6 @@ Customization:
 - Customize colors in css/style.css (--danger color, etc.)
 
 License: MIT
+=======
+# my-website
+>>>>>>> 6c7b57ac8ab388f1e58fdaf916a0c8051eb7145d
